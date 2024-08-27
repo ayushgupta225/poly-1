@@ -1,7 +1,7 @@
 //import c from "contracts/examples/erc721-transfer/FxERC721RootTunnel.sol"// Import necessary packages and contracts
 const { ethers } = require("hardhat");
 const { FXRootContractAbi } = require("../artifacts/FXRootContractAbi.js");
-const ABI = require("../artifacts/contracts/Gurdwara.sol/Gurdwara.json");
+const ABI = require("../artifacts/contracts/land.sol/land.json");
 require("dotenv").config();
 
 //Transfer ERC721A tokens to the Ethereum FxChain network
@@ -19,8 +19,8 @@ async function main() {
   const [signer] = await ethers.getSigners();
 
   // Get ERC721A contract instance
-  const NFT = await ethers.getContractFactory("Gurdwara");
-  const nft = await NFT.attach("0x78EDe6348F07E5499340b709d4e325963Dc651d5");
+  const NFT = await ethers.getContractFactory("land");
+  const nft = await NFT.attach("0x24524DCf26df9601c0B16dcA17540baae763b3B1");
 
   // Get FXRoot contract instance
   const fxRootAddress = "0xF9bc4a80464E48369303196645e876c8C7D972de";
