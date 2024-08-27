@@ -1,7 +1,7 @@
 const hre = require("hardhat");
-const tokenContractJSON = require("../artifacts/contracts/Gurdwara.sol/Gurdwara.json");
+const tokenContractJSON = require("../artifacts/contracts/land.sol/land.json");
 
-const tokenAddress = "0x78EDe6348F07E5499340b709d4e325963Dc651d5"; // place your erc20 contract address here
+const tokenAddress = "0x24524DCf26df9601c0B16dcA17540baae763b3B1"; // place your erc20 contract address here
 const tokenABI = tokenContractJSON.abi;
 const walletAddress = "0x746D818F4f239e57986d810a4d55526526414C5D"; // place your public address for your wallet here
 
